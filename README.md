@@ -1,2 +1,2 @@
-# reduxtagram
+# Reduxtagram
 A simple Instagram clone
