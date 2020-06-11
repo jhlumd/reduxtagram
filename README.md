@@ -1,2 +1,2 @@
 # Reduxtagram
-A simple Instagram clone
+A simple Instagram clone with React / Redux
