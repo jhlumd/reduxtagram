@@ -10,8 +10,8 @@
   "parser": "babel-eslint",
   "rules": {
     "quotes": [
-      2,
-      "single"
+      "error",
+      "double"
     ],
     "strict": [
       2,
