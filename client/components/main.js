@@ -9,5 +9,5 @@ export default function Main(props) {
       </h1>
       {cloneElement(props.children, props)}
     </div>
-  )
+  );
 }

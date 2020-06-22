@@ -5,5 +5,5 @@ export default function Single() {
     <div className="single-photo">
       I'm the single
     </div>
-  )
+  );
 }
