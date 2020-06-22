@@ -1,7 +1,7 @@
 {
   "name": "reduxtagram",
   "version": "1.0.0",
-  "description": "An Instagram clone built with React/Redux",
+  "description": "A frontend clone of Instagram built with React/Redux",
   "scripts": {
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",

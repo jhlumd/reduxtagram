@@ -1,6 +1,6 @@
 # Reduxtagram
 
-An Instagram clone built with React/Redux
+A frontend clone of Instagram built with React/Redux
 
 ## Running
 
