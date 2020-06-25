@@ -10,3 +10,9 @@ import posts from "./data/posts";
 import comments from "./data/comments";
 
 const preloadedState = { posts, comments };
+
+const store = createStore(rootReducer, preloadedState);
+
+export const history = syncHistoryWithStore(browserHistory, store);
+
+export default store;
