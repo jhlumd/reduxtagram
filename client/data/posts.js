@@ -1,3 +1,5 @@
+// post slice of state is set up as an array...
+
 const posts = [
   {
     code: "BAcyDyQwcXX",
