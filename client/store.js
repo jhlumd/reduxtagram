@@ -9,9 +9,9 @@ import rootReducer from "./reducers/root_reducer";
 import posts from "./data/posts";
 import comments from "./data/comments";
 
-const preloadedState = { posts, comments };
+const stateWithSeed = { posts, comments };
 
-const store = createStore(rootReducer, preloadedState);
+const store = createStore(rootReducer, stateWithSeed);
 
 export const history = syncHistoryWithStore(browserHistory, store);
 
