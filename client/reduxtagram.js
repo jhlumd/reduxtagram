@@ -12,9 +12,9 @@ import Single from "./components/single";
 import PhotoGrid from "./components/photo_grid";
 
 // Import store
-import store, { history } from "./store";
+import store, { history } from "./store/store";
 
-const router = (
+const reduxtagram = (
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={Main}>
@@ -25,4 +25,4 @@ const router = (
   </Provider>
 );
 
-render(router, document.getElementById("root"));
+render(reduxtagram, document.getElementById("root"));
