@@ -1,11 +1,20 @@
 import React from "react";
+import Photo from "./photo";
 
 export default function PhotoGrid(props) {
-  const test = "Photo Grid Component";
+  // console.log(props);
 
   return (
     <div className="photo-grid">
-      {test}
+      {props.posts.map((post, idx) => (
+        <Photo
+          key={idx}
+          post={post}
+          idx={idx}
+          comments={props.comments}
+          increment={props.increment}
+        />
+      ))}
     </div>
   );
 }

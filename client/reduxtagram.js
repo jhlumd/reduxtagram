@@ -8,8 +8,8 @@ import css from "./styles/style.styl";
 
 // Import Components
 import MainContainer from "./components/main_container";
-import Single from "./components/single";
 import PhotoGrid from "./components/photo_grid";
+import Single from "./components/single";
 
 // Import store
 import store, { history } from "./store/store";
