@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import css from "./styles/style.styl";
 
 // Import Components
-import Main from "./components/main";
+import MainContainer from "./components/main_container";
 import Single from "./components/single";
 import PhotoGrid from "./components/photo_grid";
 
@@ -17,7 +17,7 @@ import store, { history } from "./store/store";
 const reduxtagramApp = (
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={Main}>
+      <Route path="/" component={MainContainer}>
         <IndexRoute component={PhotoGrid} />
         <Route path="/view/:postId" component={Single} />
       </Route>

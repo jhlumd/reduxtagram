@@ -1,4 +1,4 @@
-import { bindActionCreators } from "redux";
+// import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { increment, addComment, removeComment } from "../actions/all_actions";
 import Main from "./main";
@@ -6,7 +6,7 @@ import Main from "./main";
 function mstp({ posts, comments }) {
   return {
     posts,
-    comments
+    comments,
   };
 }
 
