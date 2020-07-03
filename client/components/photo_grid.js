@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function PhotoGrid() {
+export default function PhotoGrid(props) {
+  const test = "Photo Grid Component";
+
   return (
     <div className="photo-grid">
-      I'm the photo grid
+      {test}
     </div>
   );
 }

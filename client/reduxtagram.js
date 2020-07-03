@@ -14,7 +14,7 @@ import PhotoGrid from "./components/photo_grid";
 // Import store
 import store, { history } from "./store/store";
 
-const reduxtagram = (
+const reduxtagramApp = (
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={Main}>
@@ -25,4 +25,4 @@ const reduxtagram = (
   </Provider>
 );
 
-render(reduxtagram, document.getElementById("root"));
+render(reduxtagramApp, document.getElementById("root"));

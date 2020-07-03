@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function Single() {
+export default function Single(props) {
+  const test = "Single Component";
+
   return (
     <div className="single-photo">
-      I'm the single
+      {test}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 // post slice of state is set up as an array...
 
-const posts = [
+export default [
   {
     code: "BAcyDyQwcXX",
     caption: "Lunch #hamont",
@@ -226,5 +226,3 @@ const posts = [
     )}`,
   },
 ];
-
-export default posts;
