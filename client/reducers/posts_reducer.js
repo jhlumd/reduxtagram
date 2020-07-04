@@ -1,13 +1,10 @@
 import { INCREMENT_LIKES } from "../actions/all_actions";
 
 export default function postsReducer(oldState = [], { type, postIdx }) {
-  // Object.freeze(oldState);
-  let newState;
-
   switch (type) {
     case INCREMENT_LIKES:
       console.log("Incrementing likes for postIdx:", postIdx);
-      newState = oldState.slice(0);
+      const newState = oldState.slice(0);
       newState[postIdx].likes++;
       return newState;
   
