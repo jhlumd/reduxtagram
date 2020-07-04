@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import CSSTransitionGroup from "react-addons-css-transition-group";
 
-export default function Photo({ post, idx, comments, increment }) {
+export default function Photo({ post, idx, numComments, increment }) {
   return (
     <figure className="grid-figure">
       <div className="grid-photo-wrap">
@@ -34,7 +34,7 @@ export default function Photo({ post, idx, comments, increment }) {
           <Link className="button" to={`/view/${post.code}`}>
             <span className="comment-count">
               <span className="speech-bubble"></span>
-              {comments[post.code] ? comments[post.code].length : 0}
+              {numComments}
             </span>
           </Link>
         </div>
