@@ -2,7 +2,7 @@ import React from "react";
 import Photo from "./photo";
 import CommentsIndex from "./comments_index";
 
-export default function Single({ posts, params, comments, increment }) {
+export default function Single({ posts, params, comments, increment, addComment, removeComment }) {
   const postIdx = posts.findIndex((post) => post.code === params.postId);
   const post = posts[postIdx];
   const postComments = comments[post.code] || [];
@@ -15,7 +15,12 @@ export default function Single({ posts, params, comments, increment }) {
         comments={comments}
         increment={increment}
       />
-      <CommentsIndex comments={postComments} />
+      <CommentsIndex
+        comments={postComments}
+        postId={post.code}
+        addComment={addComment}
+        removeComment={removeComment}
+      />
     </div>
   );
 }

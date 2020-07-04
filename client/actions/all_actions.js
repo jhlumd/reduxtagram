@@ -3,23 +3,23 @@ export const ADD_COMMENT = "ADD_COMMENT";
 export const REMOVE_COMMENT = "REMOVE_COMMENT";
 
 export function increment(postIdx) {
-  // console.log(this);
   return {
     type: INCREMENT_LIKES,
     postIdx
   };
 }
 
-export function addComment(comment) {
+export function addComment(commentData) {
   return {
     type: ADD_COMMENT,
-    comment
+    commentData,
   };
 }
 
-export function removeComment(comment) {
+export function removeComment(postId, idx) {
   return {
     type: REMOVE_COMMENT,
-    comment,
+    postId,
+    idx,
   };
 }
