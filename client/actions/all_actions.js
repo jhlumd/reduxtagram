@@ -3,6 +3,7 @@ export const ADD_COMMENT = "ADD_COMMENT";
 export const REMOVE_COMMENT = "REMOVE_COMMENT";
 
 export function increment(postIdx) {
+  // console.log(this);
   return {
     type: INCREMENT_LIKES,
     postIdx
