@@ -28,7 +28,9 @@ export default function Photo({ post, idx, comments, increment }) {
       <figcaption>
         <p>{post.caption}</p>
         <div className="control-buttons">
-          <button className="likes">&hearts; {post.likes}</button>
+          <button className="likes" onClick={increment.bind(null, idx)}>
+            &hearts; {post.likes}
+          </button>
           <Link className="button" to={`/view/${post.code}`}>
             <span className="comment-count">
               <span className="speech-bubble"></span>
