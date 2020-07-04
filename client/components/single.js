@@ -4,7 +4,8 @@ import CommentsIndex from "./comments_index";
 
 export default function Single({ posts, params, comments, increment }) {
   const postIdx = posts.findIndex((post) => post.code === params.postId);
-  const post = posts[postIdx];  
+  const post = posts[postIdx];
+  const postComments = comments[post.code] || [];
 
   return (
     <div className="single-photo">
@@ -14,7 +15,7 @@ export default function Single({ posts, params, comments, increment }) {
         comments={comments}
         increment={increment}
       />
-      <CommentsIndex />
+      <CommentsIndex comments={postComments} />
     </div>
   );
 }

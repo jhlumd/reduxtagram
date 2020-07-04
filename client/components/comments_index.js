@@ -1,11 +1,14 @@
 import React from "react";
+import Comment from "./comment";
+import CommentForm from "./comment_form";
 
-export default function CommentsIndex(props) {
-  console.log(props);
-
+export default function CommentsIndex({ comments }) {
   return (
-    <div className="comment">
-      {"Comments Index Component"}
+    <div className="comments">
+      {comments.map((comment, idx) => (
+        <Comment key={idx} comment={comment} />
+      ))}
+      <CommentForm />
     </div>
   );
 }
