@@ -13,4 +13,13 @@ const stateWithSeed = { posts, comments };
 const store = createStore(rootReducer, stateWithSeed);
 
 export const history = syncHistoryWithStore(browserHistory, store);
+
+// For hot reloading reducers with webpack
+if (module.hot) {
+  module.hot.accept("../reducers/root_reducer", () => {
+    const newRootReducer = require("../reducers/root_reducer").default;
+    store.replaceReducer(newRootReducer);
+  });
+}
+
 export default store;
