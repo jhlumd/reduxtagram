@@ -16,10 +16,9 @@ export function addComment(commentData) {
   };
 }
 
-export function removeComment(postId, idx) {
+export function removeComment(commentData) {
   return {
     type: REMOVE_COMMENT,
-    postId,
-    idx,
+    commentData,
   };
 }

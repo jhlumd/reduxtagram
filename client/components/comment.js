@@ -8,7 +8,7 @@ export default function Comment({ comment: { user, text }, postId, idx, removeCo
         {text}
         <button
           className="remove-comment"
-          onClick={removeComment.bind(null, postId, idx)}
+          onClick={removeComment.bind(null, { postCode: postId, idx })}
         >
           &times;
         </button>

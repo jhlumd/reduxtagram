@@ -21,9 +21,8 @@ export default function commentsReducer(oldState = {}, action) {
     case REMOVE_COMMENT:
       console.log("Removing a comment");
       newState = Object.assign({}, oldState);
-
-      console.log(newState);
-
+      const { postCode, idx } = action.commentData;
+      newState[postCode].splice(idx, 1);
       return newState;
 
     default:
